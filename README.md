@@ -18,6 +18,7 @@ Install PyTorch and Transformers
 
     pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
     pip install transformers datasets accelerate deepspeed
+    pip install tensorboard
 
 Set Up Ollama Mistral Model
 
@@ -28,7 +29,8 @@ Set Up Ollama Mistral Model
 
 Download Pre-trained
 
-    wget https://build.nvidia.com/mistralai/mistral-7b-instruct-v03 -O checkpoint.pth
+    wget https://models.mistralcdn.com/mistral-7b-v0-3/mistral-7B-Instruct-v0.3.tar -O mistral-7B-Instruct-v0.3.tar
+    tar -xvf mistral-7B-Instruct-v0.3.tar
 
 Configure Training Scripts
 Edit configuration files (e.g., config.json) to match your environment:
